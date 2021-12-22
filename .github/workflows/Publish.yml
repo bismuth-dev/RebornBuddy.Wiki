@@ -13,4 +13,4 @@ jobs:
           python-version: 3.x
       # Add mkdocs plugins from Dockerfile below:
       - run: pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
-      - run: mkdocs gh-deploy --force
+      - run: cd ./src && mkdocs gh-deploy --force

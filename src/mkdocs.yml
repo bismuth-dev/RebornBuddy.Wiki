@@ -20,7 +20,7 @@ theme:
     primary: light blue
     accent: green
   logo: img/logo.png
-  favicon: img/favicon.png
+  favicon: img/logo.png
   icon:
     repo: fontawesome/brands/github
   custom_dir: overrides

@@ -35,6 +35,7 @@ plugins:
   - search
   - git-revision-date-localized:
       type: datetime
+      fallback_to_build_date: true
 markdown_extensions:
   # Python Markdown
   - abbr

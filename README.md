@@ -7,7 +7,7 @@ Curated static wiki at [rebornbuddy.wiki][5] using [Material for MkDocs][6].
 [2]: https://github.com/TheManta/RebornBuddy.Wiki/actions "Build Server"
 [3]: https://img.shields.io/badge/Discord-7389D8?logo=discord&logoColor=ffffff&labelColor=6A7EC2
 [4]: https://discord.gg/bmgCq39 "Discord"
-[5]: https://themanta.github.io/RebornBuddy.Wiki
+[5]: https://rebornbuddy.wiki
 [6]: https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs"
 
 ## Editing
@@ -59,24 +59,33 @@ This site is deployed to [GitHub Pages][300] as a "project site" (versus user or
 *Main article: [Getting Started with GitHub Pages][301]*
 
  1. On the GitHub repo page, go to `Settings > Pages`.
- 2.
+ 2. Under Source, set `Branch: gh-pages` and `Folder: / (root)`, then click `Save`.
+ 3. Wait for site to fully publish to the URL at the top of the page.
 
 ### Customizing the Domain Name
 
 *Main article: [Configuring Custom Domains][302]*
 
+ 1. On the GitHub repo page, go to `Settings > Pages`.
+ 2. Set `Custom Domain: rebornbuddy.wiki`, then click `Save`.
+ 3. `git pull` the `CNAME` file created by GitHub into `src/docs/`.
+ 4. At your domain name provider, configure DNS records:
+    - Create `CNAME` record for `www` as `themanta.github.io`
+    - Create `A` and `AAAA` records for `@` as GitHub Pages' [IPv4 and IPv6 addresses][303].
+
 ### Publishing Changes
 
-*Main article: [Publishing Your Site][303]*
+*Main article: [Publishing Your Site][304]*
 
 Automatic builds + publishing are triggered by pushing commits to `master` branch.
 
 Changes should appear on the site after a few minutes.  Check the [Actions tab][2] for build status and error logs.
 
-⚠️ All MkDocs plugins added to the `Dockerfile` must also be added to [`Publish.yml`][304] or the automated build will fail.
+⚠️ All MkDocs plugins added to the `Dockerfile` must also be added to [`Publish.yml`][305] or the automated build will fail.
 
 [300]: https://pages.github.com/ "Getting Started with GitHub Pages"
 [301]: https://docs.github.com/en/pages/getting-started-with-github-pages "GitHub Pages documentation"
 [302]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site "Configuring Custom Domains"
-[303]: https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions "Publishing Y3ur Site"
-[304]: ./github/workflows/Publish.yml "Publish.yml"
+[303]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain "Configuring an apex domain"
+[304]: https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions "Publishing Y3ur Site"
+[305]: ./.github/workflows/Publish.yml "Publish.yml"

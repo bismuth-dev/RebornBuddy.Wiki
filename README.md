@@ -20,7 +20,7 @@ To submit changes to the wiki,
 2. Edit content in `.md` text files and `git commit` + `git push`.
 3. [Submit a pull request][101] to get your work published on the real site!
 
-This wiki is written in [Markdown][102], the same formatting used on GitHub, Reddit, Discord, etc. You can easily edit directly on GitHub or with a text editor such as [Visual Studio Code][103]. Some advanced MkDocs features may not preview correctly on GitHub or in VS Code -- see the [Development](#development) section for fully-rendered local previews.
+This wiki is written in [Markdown][102], the same formatting used on GitHub, Reddit, Discord, etc. You can easily edit directly on GitHub or with a text editor such as [Visual Studio Code][103]. Some [advanced MkDocs features][104] may not preview correctly on GitHub or in VS Code -- see the [Development](#development) section for fully-rendered local previews.
 
 Pull requests of all sizes are welcome! ❤️
 
@@ -28,8 +28,9 @@ It's okay to add good-faith links or content about your own projects. Issues wit
 
 [100]: https://docs.github.com/en/get-started/quickstart/fork-a-repo "Fork a Repo"
 [101]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork "Pull Request from Fork"
-[102]: https://www.markdownguide.org/basic-syntax/
+[102]: https://www.markdownguide.org/basic-syntax/ "Markdown Syntax"
 [103]: https://code.visualstudio.com/download "Visual Studio Code"
+[104]: https://squidfunk.github.io/mkdocs-material/reference/ "MkDocs Features"
 
 ## Development
 

@@ -20,6 +20,9 @@ Just be sure to enable RepoBuddy in RebornBuddy's Plugins tab, open RepoBuddy's 
 
 ## BotBases
 
+- ☑️ [**Auto Melder**](https://github.com/TuckMeIntoBread/AutoMelderBase) - Automatically meld gearsets using imported Ariyala and etro.gg links.
+- ☑️ [**Auto Retainer Sort**](https://github.com/TuckMeIntoBread/AutoRetainerSort) - Automatically organize retainer inventories according to Lisbeth-compatible rulesets.
+- [**Auto Trade**](https://github.com/TuckMeIntoBread/AutoTrade) - Quickly trade items and gil between characters.
 - [**DeepDive Combined**](https://github.com/nt153133/DeepDive) - Updated DeepDive that supports faster PotD and Heaven-on-High.
 - ☑️ [**Lisbeth**](https://www.siune.io) - The ultimate crafting and gathering suite.
 - ☑️ [**Llama Library**](https://github.com/nt153133/__LlamaLibrary) - Mega support library for most other add-ons of all types, but has its own useful BotBases and Plugins. Includes **Llama Utilities**, **Extra BotBases**, and **Llama Plugins**.
@@ -27,6 +30,7 @@ Just be sure to enable RepoBuddy in RebornBuddy's Plugins tab, open RepoBuddy's 
 ## Plugins
 
 - ☑️ [**ExBuddy**](https://github.com/Entrax643/ExBuddy) - Support library for advanced OrderBot profiles.
+- [**Sales Tracker**](https://github.com/m3chanical/SalesTracker) - Track market board sales while the bot is running.
 
 ## Combat Routines
 

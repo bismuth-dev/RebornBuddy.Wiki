@@ -1,22 +1,20 @@
-# Page Title
+---
+title: Home
+icon: material/home
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices lobortis tortor, sed feugiat turpis condimentum non. Vivamus convallis accumsan lectus, vitae imperdiet magna vehicula eget. Curabitur elementum sollicitudin lorem in sagittis. Sed iaculis accumsan mi, faucibus fermentum est dictum in. Donec lacinia egestas pretium. Vestibulum lacinia sem id neque condimentum, nec dapibus ipsum efficitur. Sed iaculis gravida lacus, sed feugiat ipsum vestibulum at. Vivamus in dictum nibh. Aliquam viverra tempus porttitor. Nulla facilisi. Nullam nec nibh vel risus porta pulvinar. Curabitur orci sem, consectetur in felis ac, egestas semper nisi. Mauris et ullamcorper neque. Morbi sit amet elit velit.
+# RebornBuddy.wiki
 
-## MathJax
+Welcome to **RebornBuddy.wiki**, the community-written documentation for the Final Fantasy XIV bot [RebornBuddy][1].
 
-$$
-\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
-$$
+New to RebornBuddy? Check out our [User's Guide][2] and [Downloads][3] pages.
 
-The homomorphism $f$ is injective if and only if its kernel is only the
-singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such
-that $f(a)=f(b)$.
+Programmer? Learn to create add-ons in the [Development][4] section.
 
+Writer? [Wiki contributions][5] of any size are always welcome ❤️
 
-### Header 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-#### Header 4
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[1]: https://www.rebornbuddy.com/ "RebornBuddy"
+[2]: /users/ "User's Guide"
+[3]: /downloads "Downloads"
+[4]: /devs/ "Developer's Guide"
+[5]: https://github.com/TheManta/RebornBuddy.Wiki#editing "Contributing"

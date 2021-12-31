@@ -17,7 +17,7 @@ nav:
   - Home: index.md
   - Downloads: downloads.md
   - User's Guide:
-    - users/index.md
+    - Getting Started: users/index.md
   - Developer's Guide:
     - devs/index.md
 theme:

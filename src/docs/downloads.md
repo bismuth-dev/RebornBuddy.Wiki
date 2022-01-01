@@ -20,6 +20,7 @@ Just be sure to enable RepoBuddy in RebornBuddy's Plugins tab, open RepoBuddy's 
 
 ## BotBases
 
+- [**ATB**](https://github.com/newb23/atb) - Combat assist that runs the Combat Routine to handle rotations while you move!
 - ☑️ [**Auto Melder**](https://github.com/TuckMeIntoBread/AutoMelderBase) - Automatically meld gearsets using imported Ariyala and etro.gg links.
 - ☑️ [**Auto Retainer Sort**](https://github.com/TuckMeIntoBread/AutoRetainerSort) - Automatically organize retainer inventories according to Lisbeth-compatible rulesets.
 - [**Auto Trade**](https://github.com/TuckMeIntoBread/AutoTrade) - Quickly trade items and gil between characters.
@@ -31,6 +32,7 @@ Just be sure to enable RepoBuddy in RebornBuddy's Plugins tab, open RepoBuddy's 
 
 - ☑️ [**ExBuddy**](https://github.com/Entrax643/ExBuddy) - Support library for advanced OrderBot profiles.
 - [**Sales Tracker**](https://github.com/m3chanical/SalesTracker) - Track market board sales while the bot is running.
+- [**Switcharoo**](https://github.com/newb23/switcharoo) - Automatically picks a Combat Routine instead of prompting each class change.
 
 ## Combat Routines
 

@@ -8,16 +8,16 @@ This page will cover buying and installing RebornBuddy itself, then getting popu
 
 ## Buying RebornBuddy
 
-RebornBuddy works off a monthly subscription and product keys are available on [RebornBuddy.com][rebornbuddy]. Unlike FF14's own subscription where you endlessly top-up the same account, RebornBuddy keys disposable and you simply get a new one as they expire. This also means it won't auto-renew and charge you unexpectedly.
+RebornBuddy requires a monthly subscription and product keys are available on [RebornBuddy.com][rebornbuddy]. Unlike the game's own subscription, where you endlessly top-up the same account, RebornBuddy keys disposable and you simply get a new one as they expire. This also means it won't auto-renew and charge you unexpectedly.
 
-Keys are available in 1 or 6 month increments and with 1 or 3 simultaneous sessions. Multi-session keys let you log into the bot multiple times at once, such as when multi-boxing or splitting costs with trusted friends. The bot generally costs less when buying more months or sessions at once.
+Keys are available in 1 or 6 month increments and with 1 or 3 simultaneous sessions. Multi-session keys let you log into the bot multiple times at once, such as when multi-boxing or sharing keys with trusted friends. The bot generally costs less when buying more months or sessions at once.
 
-???+ tip "Can't find your RebornBuddy key?"
-    Keys are delivered in a e-mail titled "RebornBuddy Key Purchase" -- wait a bit longer or check junk mail folders. If the e-mail is still missing and you've already registered on Buddy Auth, it might be available on the [Keys][list-keys] page.
+???+ help "Can't find your RebornBuddy key?"
+    Keys are delivered in an e-mail titled "RebornBuddy Key Purchase" -- wait a bit longer or check junk mail folders. If the e-mail is still missing and you're already registered on Buddy Auth, the new key might be available on the [Keys][list-keys] page.
 
     For further support, create a ticket on [RebornBuddy's ZenDesk][rebornbuddy-support].
 
-After getting your key, register on [Buddy Auth][buddyauth] with the same e-mail used to purchase for access to key and [session management][list-sessions] -- useful if the bot crashes and prevents logins due to "max sessions". If your new key isn't already listed under the [Keys][list-keys] tab, simply add it to your Buddy Auth account under the [Attach Key][attach-key] tab.
+After buying, register on [Buddy Auth][buddyauth] with the same e-mail used during purchase.  This site offers key lists and [session management][list-sessions] -- useful if the bot crashes and prevents logins due to "max sessions". If your new key isn't already listed under the [Keys][list-keys] tab, simply add it to your Buddy Auth account under the [Attach Key][attach-key] tab.
 
 [list-keys]: https://eu.buddyauth.com/User/Keys "Keys"
 [list-sessions]: https://eu.buddyauth.com/User/Sessions "Sessions"
@@ -31,7 +31,7 @@ After getting your key, register on [Buddy Auth][buddyauth] with the same e-mail
 4. In Windows Defender, [exclude the entire RebornBuddy folder][defender-exclusion].
 
     ??? warning "On Anti-Virus Exclusions"
-        Please be safe and use critical thinking when excluding things from anti-virus. RebornBuddy is probably okay and doesn't trigger [VirusTotal][virus-total], but this is your own informed choice to make. In this case, Windows Defender dislikes that RebornBuddy (necessarily) interferes with FF14's memory, so excluding it will save you the pain of `RebornBuddy.exe` being quarantined/deleted every update.
+        Please be safe and use critical thinking when excluding things from anti-virus. RebornBuddy is probably okay and doesn't trigger [VirusTotal][virus-total], but this is your own informed choice to make. In this case, Windows Defender dislikes that RebornBuddy (necessarily) interacts with the game's memory, so excluding it will save you the pain of `RebornBuddy.exe` being quarantined/deleted every update.
 
 5. While fully logged into a character, launch `RebornBuddy.exe`.
 6. Insert your product key and click ++"Login"++:
@@ -78,9 +78,9 @@ If you've made it this far without incident, congratulations! The next step is i
     [repoBuddy] RB fully loaded!
     ```
 
-You now have most everything needed to use RebornBuddy like a pro, including automatic updates!
+You now have most everything needed to use RebornBuddy like a pro, including auto-updates!
 
-For a full list of add-ons that may not be included with RepoBuddy, see the [Downloads][downloads] page and subsequent READMEs.
+For a full list of add-ons that may not be included with RepoBuddy, see the [Downloads][downloads] page.
 
 [vcredist-x64]: https://www.microsoft.com/en-us/download/details.aspx?id=26999 "VC++ 2010 SP1"
 [repobuddy-zip]: https://github.com/Zimgineering/repoBuddy/archive/master.zip "repoBuddy-master.zip"

@@ -1,14 +1,14 @@
-# [RebornBuddy.Wiki][0] [![Build Status][1]][2] [![Discord][3]][4]
+# [RebornBuddy.Wiki][github-repo] [![Build Status][build-badge]][build-status] [![Discord][discord-badge]][discord-invite]
 
-Curated static wiki at [rebornbuddy.wiki][5] using [Material for MkDocs][6].
+Curated static wiki at [**rebornbuddy.wiki**][rebornbuddy-wiki] using [Material for MkDocs][mkdocs-material].
 
-[0]: https://github.com/TheManta/RebornBuddy.Wiki "RebornBuddy.Wiki on GitHub"
-[1]: https://img.shields.io/github/workflow/status/TheManta/RebornBuddy.Wiki/Publish?style=plastic&logo=github&label=Publish&color=success
-[2]: https://github.com/TheManta/RebornBuddy.Wiki/actions "Build Server"
-[3]: https://img.shields.io/badge/Discord-7389D8?logo=discord&logoColor=ffffff&labelColor=6A7EC2
-[4]: https://discord.gg/bmgCq39 "Discord"
-[5]: https://rebornbuddy.wiki
-[6]: https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs"
+[github-repo]: https://github.com/TheManta/RebornBuddy.Wiki "RebornBuddy.Wiki on GitHub"
+[build-badge]: https://img.shields.io/github/workflow/status/TheManta/RebornBuddy.Wiki/Publish?style=plastic&logo=github&label=Publish&color=success
+[build-status]: https://github.com/TheManta/RebornBuddy.Wiki/actions "Build Server"
+[discord-badge]: https://img.shields.io/badge/Discord-7389D8?logo=discord&logoColor=ffffff&labelColor=6A7EC2
+[discord-invite]: https://discord.gg/bmgCq39 "Discord"
+[rebornbuddy-wiki]: https://rebornbuddy.wiki
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs"
 
 ## Editing
 
@@ -16,48 +16,56 @@ Curated static wiki at [rebornbuddy.wiki][5] using [Material for MkDocs][6].
 
 To submit changes to the wiki,
 
-1. [Fork this repository][100] to make your own copy.
+1. [Fork this repository][forking-repos] to make your own copy.
 2. Edit content in `.md` text files and `git commit` + `git push`.
-3. [Submit a pull request][101] to get your work published on the real site!
+3. [Submit a pull request][pull-requests] to get your work published on the real site!
 
-This wiki is written in [Markdown][102], the same formatting used on GitHub, Reddit, Discord, etc. You can easily edit directly on GitHub or with a text editor such as [Visual Studio Code][103]. Some [advanced MkDocs features][104] may not preview correctly on GitHub or in VS Code -- see the [Development](#development) section for fully-rendered local previews.
+This wiki is written in [Markdown][md-syntax], the same formatting used on GitHub, Reddit, Discord, etc. You can easily edit directly on GitHub or with a text editor such as [Visual Studio Code][vs-code]. Some [advanced MkDocs features][mkdocs-features] may not preview correctly on GitHub or in VS Code -- see the [Development](#development) section for fully-rendered local previews.
 
 Pull requests of all sizes are welcome! ❤️
 
 It's okay to add good-faith links or content about your own projects. Issues with submissions will be discussed in the relevant pull requests and site moderators may reject suspicious or poor quality work at their discretion.
 
-[100]: https://docs.github.com/en/get-started/quickstart/fork-a-repo "Fork a Repo"
-[101]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork "Pull Request from Fork"
-[102]: https://www.markdownguide.org/basic-syntax/ "Markdown Syntax"
-[103]: https://code.visualstudio.com/download "Visual Studio Code"
-[104]: https://squidfunk.github.io/mkdocs-material/reference/ "MkDocs Features"
+[forking-repos]: https://docs.github.com/en/get-started/quickstart/fork-a-repo "Fork a Repo"
+[pull-requests]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork "Pull Request from Fork"
+[md-syntax]: https://www.markdownguide.org/basic-syntax/ "Markdown Syntax"
+[vs-code]: https://code.visualstudio.com/download "Visual Studio Code"
+[mkdocs-features]: https://squidfunk.github.io/mkdocs-material/reference/ "MkDocs Features"
+
+### Tips
+
+- [Reference-style links][reference-links] are recommended to move URLs elsewhere in the file, which makes it easier to read + edit raw content, reuse links in multiple locations, and update links in one spot.
+- [`src/snippets/common-links.md`][common-links] defines a list of common links included in all pages. If something should be linked across many pages, or if a definition seems "missing" from a file, check `common-links.md`. You may need to restart Docker to pick up links added here.
+
+[reference-links]: https://www.markdownguide.org/basic-syntax/#reference-style-links
+[common-links]: ./src/snippets/common-links.md
 
 ## Development
 
 ### Setup
 
-*Main article: [Getting Started with MkDocs][200]*
+*Main article: [Getting Started with MkDocs][mkdocs-getting-started]*
 
 For easy local development, the customized Material for MkDocs container includes all dependencies and plugins used by the site.
 
- 1. Install [Docker][201].
+ 1. Install [Docker][docker-install].
  2. `git clone git@github.com:TheManta/RebornBuddy.Wiki.git`
  3. `cd ./RebornBuddy.Wiki`
  4. `pwsh ./run.ps1`
  5. Visit http://127.0.0.1:8000/ for a fully-rendered preview that auto-reloads on save.
 
-[200]: https://squidfunk.github.io/mkdocs-material/getting-started/ "Getting Started with MkDocs"
-[201]: https://docs.docker.com/get-docker/ "Install Docker"
+[mkdocs-getting-started]: https://squidfunk.github.io/mkdocs-material/getting-started/ "Getting Started with MkDocs"
+[docker-install]: https://docs.docker.com/get-docker/ "Install Docker"
 
 ## Deployment
 
 ℹ️ Only site administrators need this section.
 
-This site is deployed to [GitHub Pages][300] as a "project site" (versus user or organization site).
+This site is deployed to [GitHub Pages][github-pages] as a "project site" (versus user or organization site).
 
 ### Configuring GitHub Pages
 
-*Main article: [Getting Started with GitHub Pages][301]*
+*Main article: [Getting Started with GitHub Pages][gh-pages-start]*
 
  1. On the GitHub repo page, go to `Settings > Pages`.
  2. Under Source, set `Branch: gh-pages` and `Folder: / (root)`, then click `Save`.
@@ -65,28 +73,29 @@ This site is deployed to [GitHub Pages][300] as a "project site" (versus user or
 
 ### Customizing the Domain Name
 
-*Main article: [Configuring Custom Domains][302]*
+*Main article: [Configuring Custom Domains][gh-pages-domain]*
 
  1. On the GitHub repo page, go to `Settings > Pages`.
  2. Set `Custom Domain: rebornbuddy.wiki`, then click `Save`.
  3. `git pull` the `CNAME` file created by GitHub into `src/docs/`.
  4. At your domain name provider, configure DNS records:
     - Create `CNAME` record for `www` as `themanta.github.io`
-    - Create `A` and `AAAA` records for `@` as GitHub Pages' [IPv4 and IPv6 addresses][303].
+    - Create `A` and `AAAA` records for `@` as GitHub Pages' [IPv4 and IPv6 addresses][gh-pages-addresses].
 
 ### Publishing Changes
 
-*Main article: [Publishing Your Site][304]*
+*Main article: [Publishing Your Site][gh-pages-publish]*
 
 Automatic builds + publishing are triggered by pushing commits to `master` branch.
 
-Changes should appear on the site after a few minutes.  Check the [Actions tab][2] for build status and error logs.
+Changes should appear on the site after a few minutes.  Check the [Actions tab][build-status] for build status and error logs.
 
-⚠️ All MkDocs plugins added to the `Dockerfile` must also be added to [`Publish.yml`][305] or the automated build will fail.
+⚠️ All MkDocs plugins added to the [`Dockerfile`][dockerfile] must also be added to [`Publish.yml`][publish-yml] or the automated build will fail.
 
-[300]: https://pages.github.com/ "Getting Started with GitHub Pages"
-[301]: https://docs.github.com/en/pages/getting-started-with-github-pages "GitHub Pages documentation"
-[302]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site "Configuring Custom Domains"
-[303]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain "Configuring an apex domain"
-[304]: https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions "Publishing Y3ur Site"
-[305]: ./.github/workflows/Publish.yml "Publish.yml"
+[github-pages]: https://pages.github.com/ "Getting Started with GitHub Pages"
+[gh-pages-start]: https://docs.github.com/en/pages/getting-started-with-github-pages "GitHub Pages documentation"
+[gh-pages-domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site "Configuring Custom Domains"
+[gh-pages-addresses]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain "Configuring an apex domain"
+[gh-pages-publish]: https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions "Publishing Your Site"
+[dockerfile]: ./Dockerfile "Dockerfile"
+[publish-yml]: ./.github/workflows/Publish.yml "Publish.yml"

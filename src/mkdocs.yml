@@ -72,6 +72,13 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+      base_path:
+        - snippets
+      auto_append:
+        - common-links.md
+        - abbreviations.md
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true

@@ -17,6 +17,8 @@ Keys are available in 1 or 6 month increments and with 1 or 3 simultaneous sessi
 
     For further support, create a ticket on [RebornBuddy's ZenDesk][rebornbuddy-support].
 
+## Registering on Buddy Auth
+
 After buying, register on [Buddy Auth][buddyauth] with the same e-mail used during purchase.  This site offers key lists and [session management][list-sessions] -- useful if the bot crashes and prevents logins due to "max sessions". If your new key isn't already listed under the [Keys][list-keys] tab, simply add it to your Buddy Auth account under the [Attach Key][attach-key] tab.
 
 [list-keys]: https://eu.buddyauth.com/User/Keys "Keys"

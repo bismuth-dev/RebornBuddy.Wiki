@@ -2,9 +2,9 @@
 
 Curated static wiki at [**rebornbuddy.wiki**][rebornbuddy-wiki] using [Material for MkDocs][mkdocs-material].
 
-[github-repo]: https://github.com/TheManta/RebornBuddy.Wiki "RebornBuddy.Wiki on GitHub"
-[build-badge]: https://img.shields.io/github/workflow/status/TheManta/RebornBuddy.Wiki/Publish?style=plastic&logo=github&label=Publish&color=success
-[build-status]: https://github.com/TheManta/RebornBuddy.Wiki/actions "Build Server"
+[github-repo]: https://github.com/bismuth-dev/RebornBuddy.Wiki "RebornBuddy.Wiki on GitHub"
+[build-badge]: https://img.shields.io/github/workflow/status/bismuth-dev/RebornBuddy.Wiki/Publish?style=plastic&logo=github&label=Publish&color=success
+[build-status]: https://github.com/bismuth-dev/RebornBuddy.Wiki/actions "Build Server"
 [discord-badge]: https://img.shields.io/badge/Discord-7389D8?logo=discord&logoColor=ffffff&labelColor=6A7EC2
 [discord-invite]: https://discord.gg/bmgCq39 "Discord"
 [rebornbuddy-wiki]: https://rebornbuddy.wiki
@@ -44,15 +44,15 @@ It's okay to add good-faith links or content about your own projects. Issues wit
 
 ### Setup
 
-*Main article: [Getting Started with MkDocs][mkdocs-getting-started]*
+_Main article: [Getting Started with MkDocs][mkdocs-getting-started]_
 
 For easy local development, the customized Material for MkDocs container includes all dependencies and plugins used by the site.
 
- 1. Install [Docker][docker-install].
- 2. `git clone git@github.com:TheManta/RebornBuddy.Wiki.git`
- 3. `cd ./RebornBuddy.Wiki`
- 4. `pwsh ./run.ps1`
- 5. Visit http://127.0.0.1:8000/ for a fully-rendered preview that auto-reloads on save.
+1.  Install [Docker][docker-install].
+2.  `git clone git@github.com:bismuth-dev/RebornBuddy.Wiki.git`
+3.  `cd ./RebornBuddy.Wiki`
+4.  `pwsh ./run.ps1`
+5.  Visit http://127.0.0.1:8000/ for a fully-rendered preview that auto-reloads on save.
 
 [mkdocs-getting-started]: https://squidfunk.github.io/mkdocs-material/getting-started/ "Getting Started with MkDocs"
 [docker-install]: https://docs.docker.com/get-docker/ "Install Docker"
@@ -65,30 +65,30 @@ This site is deployed to [GitHub Pages][github-pages] as a "project site" (versu
 
 ### Configuring GitHub Pages
 
-*Main article: [Getting Started with GitHub Pages][gh-pages-start]*
+_Main article: [Getting Started with GitHub Pages][gh-pages-start]_
 
- 1. On the GitHub repo page, go to `Settings > Pages`.
- 2. Under Source, set `Branch: gh-pages` and `Folder: / (root)`, then click `Save`.
- 3. Wait for site to fully publish to the URL at the top of the page.
+1.  On the GitHub repo page, go to `Settings > Pages`.
+2.  Under Source, set `Branch: gh-pages` and `Folder: / (root)`, then click `Save`.
+3.  Wait for site to fully publish to the URL at the top of the page.
 
 ### Customizing the Domain Name
 
-*Main article: [Configuring Custom Domains][gh-pages-domain]*
+_Main article: [Configuring Custom Domains][gh-pages-domain]_
 
- 1. On the GitHub repo page, go to `Settings > Pages`.
- 2. Set `Custom Domain: rebornbuddy.wiki`, then click `Save`.
- 3. `git pull` the `CNAME` file created by GitHub into `src/docs/`.
- 4. At your domain name provider, configure DNS records:
-    - Create `CNAME` record for `www` as `themanta.github.io`
+1.  On the GitHub repo page, go to `Settings > Pages`.
+2.  Set `Custom Domain: rebornbuddy.wiki`, then click `Save`.
+3.  `git pull` the `CNAME` file created by GitHub into `src/docs/`.
+4.  At your domain name provider, configure DNS records:
+    - Create `CNAME` record for `www` as `bismuth-dev.github.io`
     - Create `A` and `AAAA` records for `@` as GitHub Pages' [IPv4 and IPv6 addresses][gh-pages-addresses].
 
 ### Publishing Changes
 
-*Main article: [Publishing Your Site][gh-pages-publish]*
+_Main article: [Publishing Your Site][gh-pages-publish]_
 
 Automatic builds + publishing are triggered by pushing commits to `master` branch.
 
-Changes should appear on the site after a few minutes.  Check the [Actions tab][build-status] for build status and error logs.
+Changes should appear on the site after a few minutes. Check the [Actions tab][build-status] for build status and error logs.
 
 ⚠️ All MkDocs plugins added to the [`Dockerfile`][dockerfile] must also be added to [`Publish.yml`][publish-yml] or the automated build will fail.
 

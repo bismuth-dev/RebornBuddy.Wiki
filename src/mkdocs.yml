@@ -2,7 +2,7 @@ site_name: RebornBuddy.wiki
 site_url: https://rebornbuddy.wiki
 dev_addr: 127.0.0.1:8000
 edit_uri: "edit/master/src/docs/"
-repo_url: https://github.com/TheManta/RebornBuddy.Wiki
+repo_url: https://github.com/bismuth-dev/RebornBuddy.Wiki
 #copyright: RebornBuddy is property of p+p Gaming GmbH. • FINAL FANTASY XIV is property of SQUARE ENIX CO., LTD.
 extra:
   generator: true
@@ -17,10 +17,10 @@ nav:
   - Home: index.md
   - Downloads: downloads.md
   - User's Guide:
-    - Getting Started: users/index.md
-    - Overview: users/overview.md
+      - Getting Started: users/index.md
+      - Overview: users/overview.md
   - Developer's Guide:
-    - devs/index.md
+      - devs/index.md
 theme:
   name: material
   palette:
@@ -90,4 +90,4 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css

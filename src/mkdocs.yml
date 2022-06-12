@@ -33,6 +33,8 @@ theme:
     repo: fontawesome/brands/github
   custom_dir: overrides
   features:
+    - content.tabs.link
+    - navigation.indexes
     - navigation.instant
     - navigation.top
     - navigation.tracking
@@ -45,6 +47,7 @@ plugins:
       type: datetime
       fallback_to_build_date: true
   - mkdocs-video
+  - tags
 markdown_extensions:
   # Python Markdown
   - abbr
@@ -80,7 +83,11 @@ markdown_extensions:
       auto_append:
         - common-links.md
         - abbreviations.md
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:

@@ -1,15 +1,15 @@
-docker run --rm -it -p 8000:8000 -v ${PWD}/src:/docs squidfunk/mkdocs-material:rebornbuddy.wiki
+docker run --rm -it -p 8757:8000 -v ${PWD}/src:/docs squidfunk/mkdocs-material:rebornbuddy.wiki
 # Set up Docker container for fully-rendered preview site
 docker build -t squidfunk/mkdocs-material:rebornbuddy.wiki .
 docker run --rm -it -v ${PWD}/src:/docs squidfunk/mkdocs-material:rebornbuddy.wiki new .
 
 # Run container in background
-docker run --name "rebornbuddy.wiki" --rm -it -d -p 8000:8000 -v ${PWD}/src:/docs squidfunk/mkdocs-material:rebornbuddy.wiki
+docker run --name "rebornbuddy.wiki" --rm -it -d -p 8757:8000 -v ${PWD}/src:/docs squidfunk/mkdocs-material:rebornbuddy.wiki
 
 # Open in browser once it's available
 Write-Output "Waiting for web server to load...";
 
-$url = "http://localhost:8000";
+$url = "http://localhost:8757";
 $isServerUp = $false;
 
 do

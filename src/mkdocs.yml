@@ -18,9 +18,10 @@ nav:
   - Downloads: downloads.md
   - User's Guide:
       - Getting Started: users/index.md
-      - Overview: users/overview.md
+      - Overview: users/addon-types.md
   - Developer's Guide:
       - devs/index.md
+      - Development Environment: devs/dev-env.md
 theme:
   name: material
   palette:

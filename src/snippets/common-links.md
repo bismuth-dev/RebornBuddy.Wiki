@@ -53,6 +53,7 @@
 [switcharoo]: https://github.com/newb23/switcharoo
 [y2krazy-discord]: https://discord.gg/pxf5e7w
 [y2krazy-profiles]: https://github.com/y2krazy/Rebornbuddy-Profiles
+[wiki-discord]: https://discord.gg/bmgCq39
 
 <!-- Other -->
 

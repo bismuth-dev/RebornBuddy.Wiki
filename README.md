@@ -51,7 +51,7 @@ For easy local development, the customized Material for MkDocs container include
 1.  Install [Docker][docker-install].
 2.  Clone this repository: `git clone https://github.com/LlamaMagic/llamamagic.github.io.git`
 3.  Execute `run.ps1` to start the local server: `powershell ./run.ps1`
-4.  Visit http://127.0.0.1:8000/ for a fully-rendered preview that auto-reloads on save.
+4.  Visit http://127.0.0.1:8757/ for a fully-rendered preview that auto-reloads on save.
 
 [mkdocs-getting-started]: https://squidfunk.github.io/mkdocs-material/getting-started/ "Getting Started with MkDocs"
 [docker-install]: https://docs.docker.com/get-docker/ "Install Docker"

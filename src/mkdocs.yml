@@ -44,6 +44,7 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       fallback_to_build_date: true
+  - mkdocs-video
 markdown_extensions:
   # Python Markdown
   - abbr

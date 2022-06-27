@@ -59,4 +59,4 @@ Almost all useful add-ons are included with RepoBuddy by default, so you probabl
 
 ## Other
 
-- [**Console Snippets**](https://pastebin.com/c0rmu0uz) - Misc RebornConsole C# snippets that might help new developers.
+- [**Console Snippets**](https://pastebin.com/raw/C0rmU0Uz) - Misc RebornConsole C# snippets that might help new developers.

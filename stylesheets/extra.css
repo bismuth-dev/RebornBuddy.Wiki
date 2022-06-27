@@ -1,0 +1,4 @@
+.md-header__button.md-logo :is(img,svg) {
+    height: auto;
+    width: auto;
+}

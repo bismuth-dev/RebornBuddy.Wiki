@@ -2,7 +2,7 @@
 
 [buddyauth]: https://eu.buddyauth.com/ "Buddy Auth"
 [rebornbuddy]: https://www.rebornbuddy.com/ "RebornBuddy"
-[rebornbuddy-download]: https://updates.buddyauth.com/getnewest?filter=RebornBuddy64 "RebornBuddy64"
+[rebornbuddy-download]: https://updates.buddyauth.com/GetNewest?filter=Rebornbuddy64 "RebornBuddy64"
 [rebornbuddy-support]: http://support.thebuddyforum.com/anonymous_requests/new "RebornBuddy Support"
 
 <!-- RebornBuddy.wiki Links -->

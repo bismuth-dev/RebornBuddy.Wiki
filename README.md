@@ -3,7 +3,7 @@
 Curated static wiki at [**rebornbuddy.wiki**][rebornbuddy-wiki] using [Material for MkDocs][mkdocs-material].
 
 [github-repo]: https://github.com/bismuth-dev/RebornBuddy.Wiki "RebornBuddy.Wiki on GitHub"
-[build-badge]: https://img.shields.io/github/workflow/status/bismuth-dev/RebornBuddy.Wiki/Publish?style=plastic&logo=github&label=Publish&color=success
+[build-badge]: https://img.shields.io/github/actions/workflow/status/bismuth-dev/RebornBuddy.Wiki/.github/workflows/Publish.yml?branch=master
 [build-status]: https://github.com/bismuth-dev/RebornBuddy.Wiki/actions "Build Server"
 [discord-badge]: https://img.shields.io/badge/Discord-7389D8?logo=discord&logoColor=ffffff&labelColor=6A7EC2
 [discord-invite]: https://discord.gg/bmgCq39 "Discord"

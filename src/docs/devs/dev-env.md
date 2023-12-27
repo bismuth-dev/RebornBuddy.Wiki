@@ -2,7 +2,7 @@
 
 Good development tools are a huge leap in quality-of-life over playing with Microsoft Notepad. This page covers setting up a proper development environment so you can focus on making cool things instead of fighting your editor.
 
-You may already be comfortable with your own setup and that's okay. The important thing to know is most RebornBuddy development involves .NET Framework 4.8, C#, WinForms, XML, JSON, and maybe WPF. Source control and project distribution are done with `git` and GitHub.
+You may already be comfortable with your own setup and that's okay. The important point is most RebornBuddy development involves .NET Framework 4.8, C#, WinForms, XML, JSON, and maybe WPF. Source control and project distribution are done with `git` and GitHub.
 
 Furthermore, this site can't cover all programming and tooling topics -- consider it a primer. It's expected and essential to search online and ask questions in [#rb-bootcamp][wiki-discord].
 
@@ -28,8 +28,7 @@ Install the following options from each tab:
     -   .NET Desktop Development
 -   **Individual Components:**
     -   **.NET:**
-        -   .NET 5.x-6.x Runtimes
-        -   .NET Core 3.1 Runtime
+        -   .NET 6-8 Runtimes
         -   .NET Framework 3.5 Development Tools
         -   .NET Framework 4.6-4.8.x Targeting Packs
         -   .NET Framework 4.6-4.8.x SDKs
@@ -51,9 +50,8 @@ Below are some common settings worth changing:
 
 Install the following extensions by opening each link and clicking ++"Download"++:
 
--   [Code Cleanup on Save](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) - Auto format and code cleanup on save. Enable it in ++"Tools"++ > ++"Options"++ > ++"Environment"++ > ++"Code Cleanup on Save"++.
+-   [Code Cleanup on Save](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) - Auto format and code cleanup on save.
 -   [Markdown Editor v2](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor2) - Live preview while editing Markdown (`.md`) documents.
--   [Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2022andLater) - Spell check in comments, strings, etc.
 
 ## Visual Studio Code
 
@@ -69,7 +67,7 @@ Install the following extensions by opening each link and clicking ++"Download"+
 
 Install the following extensions:
 
--   [C# for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) - C# language support and auto-formatting.
+-   [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) - C# language support and auto-formatting.
 -   [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - Auto-format according to the project's `.editorconfig` rules-file.
 -   [GitHub Markdown Preview Pack](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview) - Properly preview GitHub-flavored Markdown.
 -   [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - Colorize indentation by depth. Helps spot related code.
@@ -106,26 +104,6 @@ In Visual Studio Code, press ++ctrl+shift+p++, type `settings.json`, then choose
     }
 }
 ```
-
-## WinMerge
-
-[**WinMerge**][winmerge] is a "diff-tool" that helps compare different versions of a file and combine them into a final merged version. This is useful for figuring out what's changed in a file, or resolving multiple people editing the same file simultaneously.
-
-[winmerge]: https://winmerge.org/
-
-### Installing WinMerge
-
-Download and run the [WinMerge Installer][winmerge-installer]. Check ++"Add WinMerge folder to your system path"++ during the last step before installing:
-
-![System Path](./img/dev-env/winmerge-path.png)
-
-[winmerge-installer]: https://winmerge.org/downloads/?lang=en
-
-### Configuring WinMerge
-
-In WinMerge, open ++"Edit"++ > ++"Options..."++ > ++"Backup Files"++. Uncheck all "Create backup files in:" options to avoid `.bak` files being created when merging files.
-
-![Backup Files](./img/dev-env/winmerge-backup.png)
 
 ## `git` Source Control
 
@@ -180,13 +158,14 @@ Copy/paste this entire block; no modification needed:
 
 ```bash
 # Tool Integrations
-git config --global merge.tool "winmerge"
-git config --replace --global mergetool.winmerge.cmd "WinMergeU.exe -e -u -o \"\$MERGED\" -dl \"Local\" -dm \"Base\" -dr \"Remote\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+git config --global core.editor 'code --wait --new-window'
+
+git config --global merge.tool vscode
+git config --replace --global mergetool.vscode.cmd 'code --wait $MERGED'
 git config --global mergetool.prompt "false"
 
-git config --global diff.tool "winmerge"
-git config --replace --global difftool.winmerge.cmd "WinMergeU.exe -e -u -dl \"Old\" -dr \"New\" \"\$LOCAL\" \"\$REMOTE\""
-git config --global difftool.prompt "false"
+git config --global diff.tool vscode
+git config --replace --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
 
 git config --global gpg.program "$(where gpg)"
 

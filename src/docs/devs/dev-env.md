@@ -37,21 +37,21 @@ Install the following options from each tab:
 
 [vs-installer]: https://visualstudio.microsoft.com/vs/community/
 
-### Configuring Visual Studio
-
-Below are some common settings worth changing:
-
--   **Color Theme:** ++"Tools"++ > ++"Options"++ > ++"Environment"++ > ++"Color Theme"++: (Blue|Dark|Light|System)
--   **Line Numbers:** ++"Tools"++ > ++"Options"++ > ++"Text Editors"++ > ++"All Languages"++ > check ++"Line Numbers"++ (may start as a square; click until checked)
-
-![Line Numbers](./img/dev-env/line-numbers.png)
-
-### Extensions for Visual Studio
+### Extending Visual Studio
 
 Install the following extensions by opening each link and clicking ++"Download"++:
 
 -   [Code Cleanup on Save](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) - Auto format and code cleanup on save.
 -   [Markdown Editor v2](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor2) - Live preview while editing Markdown (`.md`) documents.
+
+### Configuring Visual Studio
+
+Below are some common settings worth changing:
+
+-   **Color Theme:** ++"Tools"++ > +2+"Options"++ > ++"Environment"++ > ++"Color Theme"++: (Blue|Dark|Light|System)
+-   **Line Numbers:** ++"Tools"++ > ++"Options"++ > ++"Text Editors"++ > ++"All Languages"++ > check ++"Line Numbers"++ (may start as a square; click until checked)
+
+![Line Numbers](./img/dev-env/line-numbers.png)
 
 ## Visual Studio Code
 
@@ -63,7 +63,7 @@ Install the following extensions by opening each link and clicking ++"Download"+
 
 [vscode-installer]: https://code.visualstudio.com/download
 
-### Extensions for Visual Studio Code
+### Extending Visual Studio Code
 
 Install the following extensions:
 
@@ -194,7 +194,7 @@ git config --global alias.stash-all "stash save --include-untracked"
 
 Choose a good, safe-for-work username. It's painful to change later because it breaks all existing links to your repositories, among other troubles.
 
-Use a good password and STRONGLY consider [enabling TOTP two-factor authentication][github-2fa]. Compromised developer accounts are gold; don't wait until it's too late. Use [LastPass][lastpass] _alongside_ [Authy][authy] or [LastPass Authenticator][lastpass-authenticator] if you lack a password or 2FA manager.
+Use a good password and STRONGLY consider [enabling TOTP two-factor authentication][github-2fa]. Compromised developer accounts are gold -- don't wait until it's too late. Use [LastPass][lastpass] _alongside_ [Authy][authy] or [LastPass Authenticator][lastpass-authenticator] if you lack a password or 2FA manager.
 
 [github-join]: https://github.com/join
 [github-2fa]: https://help.github.com/en/articles/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app

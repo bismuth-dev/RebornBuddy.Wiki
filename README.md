@@ -49,7 +49,7 @@ _Main article: [Getting Started with MkDocs][mkdocs-getting-started]_
 For easy local development, the customized Material for MkDocs container includes all dependencies and plugins used by the site.
 
 1.  Install [Docker][docker-install].
-2.  Clone this repository: `git clone https://github.com/LlamaMagic/llamamagic.github.io.git`
+2.  Clone this repository: `git clone git@github.com:bismuth-dev/RebornBuddy.Wiki.git`
 3.  Execute `run.ps1` to start the local server: `powershell ./run.ps1`
 4.  Visit http://127.0.0.1:8757/ for a fully-rendered preview that auto-reloads on save.
 

@@ -11,7 +11,7 @@
 [devs-guide]: /devs/ "Developer's Guide"
 [downloads]: /downloads "Downloads"
 [installing-rebornbuddy]: /users/#installing-rebornbuddy "Installing RebornBuddy"
-[installing-repobuddy]: /users/#installing-repobuddy-and-other-add-ons "Installing RepoBuddy"
+[installing-updatebuddy]: /users/#installing-updatebuddy-and-other-add-ons "Installing UpdateBuddy"
 [rebornbuddy-wiki]: https://rebornbuddy.wiki "RebornBuddy.wiki"
 [users-guide]: /users/ "User's Guide"
 
@@ -51,6 +51,8 @@
 [sodimm-discord]: https://discord.gg/zkNYzAs
 [sodimm-profiles]: https://github.com/sodimm/RebornBuddy
 [switcharoo]: https://github.com/newb23/switcharoo
+[updatebuddy]: https://loader.updatebuddy.net/UpdateBuddy.zip
+[updatebuddy-discord]: https://discord.gg/bmgCq39
 [y2krazy-discord]: https://discord.gg/pxf5e7w
 [y2krazy-profiles]: https://github.com/y2krazy/Rebornbuddy-Profiles
 [wiki-discord]: https://discord.gg/bmgCq39

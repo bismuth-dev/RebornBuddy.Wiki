@@ -8,17 +8,19 @@ This list may be inaccurate or incomplete. Feel free to update this list, even t
 
 - :fontawesome-solid-check: - Recommended
 - :fontawesome-solid-dollar-sign: - Paid
-- :material-update: - RepoBuddy Default
+- :material-update: - UpdateBuddy Default
 - :fontawesome-brands-discord: - Discord
 
 ## Automatic Installation and Updates
 
-:fontawesome-solid-check: [RepoBuddy][installing-repobuddy] is **the recommended way to install and update RebornBuddy add-ons**. Don't stress over unblocking `.zip` files, extracting to the right locations, or staying up to date -- just install RepoBuddy and let it do the work!
+:fontawesome-solid-check: [UpdateBuddy][installing-updatebuddy] is **the recommended way to install and update RebornBuddy add-ons**. Don't stress over unblocking `.zip` files, extracting to the right locations, or staying up to date -- just install UpdateBuddy and let it do the work!
 
-Almost all useful add-ons are included with RepoBuddy by default, so you probably won't need the list below after installing it. Updates occur each time RebornBuddy starts.
+Almost all useful add-ons are included with UpdateBuddy by default, so you probably won't need the list below after installing it. Updates occur each time RebornBuddy starts, or by clicking ++"Force Update"++ in the UpdateBuddy options.
 
-[Click here to learn more!][installing-repobuddy]
+[Click here to learn more!][installing-updatebuddy]
 
+<!-- TODO: Update RepoBuddy Defaults to UpdateBuddy Defaults -->
+<!-- TODO: Update current project lists, links. Do we even need this with UpdateBuddy's browser? -->
 ## BotBases
 
 - :material-update: [**ATB**][atb] - Combat assist that runs the Combat Routine to handle rotations while you move!

@@ -12,7 +12,7 @@ RebornBuddy requires a monthly subscription and product keys are available on [R
 
 Keys are available in 1 or 6 month increments and with 1 or 3 simultaneous sessions. Multi-session keys let you log into the bot multiple times at once, such as when multi-boxing or sharing keys with trusted friends. The bot generally costs less when buying more months or sessions at once.
 
-???+ help "Can't find your RebornBuddy key?"
+???+ question "Can't find your RebornBuddy key?"
     Keys are delivered in an e-mail titled "RebornBuddy Key Purchase" -- wait a bit longer or check junk mail folders. If the e-mail is still missing and you're already registered on Buddy Auth, the new key might be available on the [Keys][list-keys] page.
 
     For further support, create a ticket on [RebornBuddy's ZenDesk][rebornbuddy-support].
@@ -48,41 +48,35 @@ If you've made it this far without incident, congratulations! The next step is i
 
 [virus-total]: https://www.virustotal.com/gui/home/upload "VirusTotal"
 
-## Installing RepoBuddy and Other Add-Ons
+## Installing UpdateBuddy and Other Add-Ons
 
-[RepoBuddy][repobuddy] is recommended to easily install and automatically update all types of add-ons. It includes the most popular stuff by default, so RepoBuddy is probably the only plugin most users need to install manually.
+??? question "What about RepoBuddy? Can we still use it?"
+    RepoBuddy was retired on January 8th, 2024 after [GitHub disabled SVN access][svn-sunset] to git repositories. UpdateBuddy is RepoBuddy's successor -- it supports both public and private git repositories, and sports a much-improved UI for browsing and installing add-ons. It even automatically migrates your existing repos and uninstalls RepoBuddy for you!
+
+[UpdateBuddy][updatebuddy] is recommended to easily install and automatically update all types of add-ons. It includes the most popular stuff by default, so UpdateBuddy is probably the only plugin most users need to install manually.
 
 1. Close RebornBuddy if it's already running.
-2. Install [Microsoft Visual C++ 2010 SP1][vcredist-x64]. Choose the `vcredist_x64.exe` version.
-3. Download [`repoBuddy-master.zip`][repobuddy-zip].
-4. **Before** extracting, [unblock the `.zip` file][unblock-zip] to avoid issues later.
-5. Extract RepoBuddy to `RebornBuddy\Plugins\`, **removing `-master`** so it looks like:
+2. Download [`UpdateBuddy.zip`][updatebuddy-zip].
+3. **Before** extracting, [unblock the `.zip` file][unblock-zip] to avoid issues later.
+4. Extract UpdateBuddy to `RebornBuddy\Plugins\` so it looks like:
     ```
     RebornBuddy
     └── Plugins
-        └── repoBuddy
-            ├── repoBuddy.cs
+        └── UpdateBuddy
+            ├── UpdateBuddy.dll
             └── ...
     ```
-6. Launch RebornBuddy.
-7. In the ++"Plugins"++ tab, enable "repoBuddy" and wait for the bot to restart.
-8. Click the "repoBuddy" line, then the ++"Settings"++ button to the right.
-
-    ![Plugins Tab](img/enable_repobuddy.png)
-
-9. Under ++"One-Time Downloads"++, install "Magitek" and "Lisbeth".
-10. At the top, click "Restart RebornBuddy".
-
-    ![One-Time Downloads](img/one-time_downloads.png)
-
-11. Wait for installation to finish and the logs to show:
+5. Launch RebornBuddy.
+6. Wait for UpdateBuddy to auto-install and auto-restart RebornBuddy.
+   - UpdateBuddy should be enabled by default. No intervention required!
+7. Wait for RebornBuddy to restart and for the logs to show:
     ```
-    [repoBuddy] RB fully loaded!
+    [UpdateBuddy] RB is fully loaded!
     ```
 
 You now have most everything needed to use RebornBuddy like a pro, including auto-updates!
 
-For a full list of add-ons that may not be included with RepoBuddy, see the [Downloads][downloads] page.
+To browse the full list of add-ons that may not have been auto-installed, check ++"Plugins > UpdateBuddy > Settings"++.
 
-[vcredist-x64]: https://www.microsoft.com/en-us/download/details.aspx?id=26999 "VC++ 2010 SP1"
-[repobuddy-zip]: https://github.com/Zimgineering/repoBuddy/archive/master.zip "repoBuddy-master.zip"
+[svn-sunset]: https://github.blog/changelog/2024-01-08-subversion-has-been-sunset/
+[updatebuddy-zip]: https://loader.updatebuddy.net/UpdateBuddy.zip "UpdateBuddy.zip"

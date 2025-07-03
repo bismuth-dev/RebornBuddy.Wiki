@@ -1,9 +1,9 @@
 <!-- Official RebornBuddy links -->
 
-[buddyauth]: https://eu.buddyauth.com/ "Buddy Auth"
+[buddyauth]: https://portal.rebornbuddy.com/ "Buddy Auth"
 [rebornbuddy]: https://www.rebornbuddy.com/ "RebornBuddy"
-[rebornbuddy-download]: https://updates.buddyauth.com/GetNewest?filter=Rebornbuddy64 "RebornBuddy64"
-[rebornbuddy-support]: http://support.thebuddyforum.com/anonymous_requests/new "RebornBuddy Support"
+[rebornbuddy-download]: https://updates.rebornbuddy.com/GetNewest?filter=Rebornbuddy64 "Download RebornBuddy64"
+[rebornbuddy-support]: https://support.rebornbuddy.com/ "RebornBuddy Support"
 
 <!-- RebornBuddy.wiki Links -->
 

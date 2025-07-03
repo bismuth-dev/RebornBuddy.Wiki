@@ -21,9 +21,9 @@ Keys are available in 1 or 6 month increments and with 1 or 3 simultaneous sessi
 
 After buying, register on [Buddy Auth][buddyauth] with the same e-mail used during purchase.  This site offers key lists and [session management][list-sessions] -- useful if the bot crashes and prevents logins due to "max sessions". If your new key isn't already listed under the [Keys][list-keys] tab, simply add it to your Buddy Auth account under the [Attach Key][attach-key] tab.
 
-[list-keys]: https://eu.buddyauth.com/User/Keys "Keys"
-[list-sessions]: https://eu.buddyauth.com/User/Sessions "Sessions"
-[attach-key]: https://eu.buddyauth.com/User/AttachKey "Attach Keys"
+[list-keys]: https://portal.rebornbuddy.com/User/Keys "Keys"
+[list-sessions]: https://portal.rebornbuddy.com/User/Sessions "Sessions"
+[attach-key]: https://portal.rebornbuddy.com/User/AttachKey "Attach Keys"
 
 ## Installing RebornBuddy
 
@@ -79,4 +79,4 @@ You now have most everything needed to use RebornBuddy like a pro, including aut
 To browse the full list of add-ons that may not have been auto-installed, check ++"Plugins > UpdateBuddy > Settings"++.
 
 [svn-sunset]: https://github.blog/changelog/2024-01-08-subversion-has-been-sunset/
-[updatebuddy-zip]: https://loader.updatebuddy.net/UpdateBuddy.zip "UpdateBuddy.zip"
+[updatebuddy-zip]: https://loader.updatebuddy.net/UpdateBuddy.zip "Download UpdateBuddy"

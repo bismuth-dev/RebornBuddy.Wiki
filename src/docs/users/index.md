@@ -53,26 +53,12 @@ If you've made it this far without incident, congratulations! The next step is i
 ??? question "What about RepoBuddy? Can we still use it?"
     RepoBuddy was retired on January 8th, 2024 after [GitHub disabled SVN access][svn-sunset] to git repositories. UpdateBuddy is RepoBuddy's successor -- it supports both public and private git repositories, and sports a much-improved UI for browsing and installing add-ons. It even automatically migrates your existing repos and uninstalls RepoBuddy for you!
 
-[UpdateBuddy][updatebuddy] is recommended to easily install and automatically update all types of add-ons. It includes the most popular stuff by default, so UpdateBuddy is probably the only plugin most users need to install manually.
+1. `updateBuddy` now comes pre-installed with RebornBuddy.
+2. Once you have the bot up and running, select the `Plugins` tab across the top and find `updateBuddy` on the list of Plugins. Select it, and then hit the `Settings` button on the right side panel.
+3. On the `Repos` tab across the top. Make sure the prerequisites and `RebornProfiles` are selected and `updateBuddy` will download/install/ and update those repos for you.
+4. You'll likely also want to check out the `Extra Downloads` tab for important stuff like `Lisbeth` and `Magitek`.
 
-1. Close RebornBuddy if it's already running.
-2. Download [`UpdateBuddy.zip`][updatebuddy-zip].
-3. **Before** extracting, [unblock the `.zip` file][unblock-zip] to avoid issues later.
-4. Extract UpdateBuddy to `RebornBuddy\Plugins\` so it looks like:
-    ```
-    RebornBuddy
-    └── Plugins
-        └── UpdateBuddy
-            ├── UpdateBuddy.dll
-            └── ...
-    ```
-5. Launch RebornBuddy.
-6. Wait for UpdateBuddy to auto-install and auto-restart RebornBuddy.
-   - UpdateBuddy should be enabled by default. No intervention required!
-7. Wait for RebornBuddy to restart and for the logs to show:
-    ```
-    [UpdateBuddy] RB is fully loaded!
-    ```
+![updateBuddy](img/updateBuddy.png)
 
 You now have most everything needed to use RebornBuddy like a pro, including auto-updates!
 

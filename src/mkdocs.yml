@@ -48,6 +48,8 @@ plugins:
       type: datetime
       fallback_to_build_date: true
   - mkdocs-video
+  - optimize
+  - privacy
   - tags
 markdown_extensions:
   # Python Markdown

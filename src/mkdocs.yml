@@ -48,7 +48,6 @@ plugins:
   - git-revision-date-localized:
       type: datetime
   - mkdocs-video
-  - optimize
   - privacy
   - tags
 markdown_extensions:

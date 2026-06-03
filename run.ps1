@@ -8,10 +8,10 @@ Write-Output "Building Docker image to locally host fully-rendered preview site"
 docker build -t "squidfunk/mkdocs-material:$name" "."
 
 Write-Output "Creating new mkdocs project, if none present"
-docker run --rm -it -v "${PWD}/src:/docs" "squidfunk/mkdocs-material:$name" new .
+docker run --rm -it -v "${PWD}:/docs" "squidfunk/mkdocs-material:$name" new .
 
 Write-Output "Starting Docker container in background"
-docker run --name "$name" --rm -d -p "$($port):8000" -v "${PWD}/src:/docs" "squidfunk/mkdocs-material:$name"
+docker run --name "$name" --rm -d -p "$($port):8000" -v "${PWD}:/docs" "squidfunk/mkdocs-material:$name"
 
 # Open in browser once it's available
 Write-Output "Waiting for web server to load";
